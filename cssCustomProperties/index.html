@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiSlot</title>
+    <style>
+        my-element {
+            --primary-color: blue;
+            --heading-primary: 40px;
+        }
+        
+        my-element:nth-child(2) {
+            --primary-color: red;
+        }
+        
+        my-element:nth-child(3) {
+            --secondary-color: rgb(0, 255, 98);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <my-element>
+        <span slot="title">Soy el título interno 1</span>
+        <span slot="parrafo">Soy el texto interno del párrafo</span>
+    </my-element>
+
+    <my-element class="segundo">
+        <span slot="title">Soy el título interno 1</span>
+        <span slot="parrafo">Soy el texto interno del párrafo</span>
+    </my-element>
+
+    <my-element>
+        <span slot="title">Soy el título interno 1</span>
+        <span slot="parrafo">Soy el texto interno del párrafo</span>
+    </my-element>
+
+    <script type="module" src="./my-element.js"></script>
+</body>
+
+</html>
